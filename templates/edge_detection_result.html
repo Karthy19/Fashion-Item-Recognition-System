@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .result-container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555555;
+            font-size: 18px;
+            margin: 0;
+        }
+        .product {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .illustration {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Edge Detection Result</h1>
+    <img src="{{ url_for('static', filename='edges.jpg') }}" alt="Edge Detected Image">
+</body>
+</html>
